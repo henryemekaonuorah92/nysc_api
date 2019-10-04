@@ -20,6 +20,23 @@ export default {
     }
   },
 
+    // POST /api/categories
+  createCategory: {
+    body: {
+      name: Joi.string().required()
+    }
+  },
+
+    // UPDATE /api/categories/:categoryId
+  updateCategory: {
+    body: {
+      name: Joi.string().required()
+    },
+    params: {
+      categoryId: Joi.string().hex().required()
+    }
+  },
+
   // POST /api/auth/login
   login: {
     body: {
