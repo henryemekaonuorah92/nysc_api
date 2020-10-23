@@ -1,7 +1,7 @@
 API for in house surveys built with NodeJS.
 
 
-## Getting Started
+## Setting Up
 
 Clone the repo:
 ```sh
